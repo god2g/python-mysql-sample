@@ -5,12 +5,13 @@ import MySQLdb
 application = flask.Flask(__name__)
 application.debug = True
 
+
 @application.route('/')
 def hello_world():
   storage = Storage()
   storage.populate()
   score = storage.score()
-  return "Hello Shanghai Pudong Zhengjiang Huatuo Rd. 280 123, %d!" % score
+  return "Hello Shanghai Pudong Zhengjiang Huatuo Rd. 280 1116, %d!" % score
 
 class Storage():
   def __init__(self):
